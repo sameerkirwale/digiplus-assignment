@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Digiplus IT Assessment </title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+    
+    <main>
+        <label for="node-type"> Node Type </label> <br>
+        <select name="node-type" id="node-type" class="css-input">
+            <option value="Single Node"> Single Node </option>
+            <option value="Parent Node"> Parent Node </option>
+            <option value="Child Node"> Child Node </option>
+        </select>
+        
+        <br/> <br/>
+
+        <label for="node-value"> Node Value </label> <br/>
+        <input type="text" name="node-value" id="node-value" class="css-input" placeholder="Write Node Value Here"> <br/> <br/>
+
+        <button type="submit" value="add-node" class="css-input css-input-btn" onclick="add()"> Add Node </button>
+
+        <br/> <br/>
+
+        <div>
+            Selected Node 
+            <input type="text" class="css-input" id="display-selected-node" value=""> 
+            <button type="submit" class="css-input-btn"> Update </button>
+            <button type="submit" class="css-input-btn"> Delete </button>
+        </div>
+
+        <br/> <br/> 
+
+        <div id="js-display-output"> </div>
+
+    </main>
+</body>
+
+<script src="index.js"></script>
+</html>
